@@ -27,7 +27,7 @@ jobs:
         pyinstaller --onefile --windowed --name=BuscadorExcel buscador.py
     
     - name: Upload artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: BuscadorExcel-Windows
         path: dist/BuscadorExcel.exe
@@ -53,7 +53,7 @@ jobs:
         pyinstaller --onefile --windowed --name=BuscadorExcel buscador.py
     
     - name: Upload artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: BuscadorExcel-Mac
         path: dist/BuscadorExcel
